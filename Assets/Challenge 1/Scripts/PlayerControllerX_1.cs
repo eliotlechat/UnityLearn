@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerControllerX_1 : MonoBehaviour
 {
-    float speed = 0f;
-    float rotationSpeed = 50.0f;
+    public float speed = 0f;
+    public float rotationSpeed = 50.0f;
     float verticalInput;
 
     // Start is called before the first frame update

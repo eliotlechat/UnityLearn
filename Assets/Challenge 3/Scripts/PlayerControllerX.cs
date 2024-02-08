@@ -34,7 +34,7 @@ public class PlayerControllerX : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (transform.position.y > 15) 
         {
@@ -61,7 +61,7 @@ public class PlayerControllerX : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             playerAudio.PlayOneShot(boingSound, 1.0f);
-            playerRb.AddForce(Vector3.up * 20, ForceMode.Impulse);
+            playerRb.AddForce(Vector3.up * 15, ForceMode.Impulse);
 
         }
 
