@@ -6,7 +6,7 @@ public class MoveDown : MonoBehaviour
 {
 
     private Rigidbody objectRb;
-    public float speed =30;
+    public float speed = 5.0f;
     public float zBound = -6;
 
     // Start is called before the first frame update
