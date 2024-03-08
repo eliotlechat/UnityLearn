@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class Player_L4 : MonoBehaviour
 {
-    
-    
+
+
     private Rigidbody playerRb;
     public int speed = 20;
     // Start is called before the first frame update
     public float zBound = 5.5f;
-    
+
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
@@ -26,7 +26,7 @@ public class Player_L4 : MonoBehaviour
         playerRb.AddForce(Vector3.forward * speed * verticalInput);
         playerRb.AddForce(Vector3.right * speed * horizontalInput);
         ConstraintPlayerBound();
-        
+
     }
 
     void ConstraintPlayerBound()
@@ -40,4 +40,21 @@ public class Player_L4 : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, -zBound);
         }
     }
+
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Powerup"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        { 
+            Debug.Log("Player has been touched");
+        }
+    }
 }
+
