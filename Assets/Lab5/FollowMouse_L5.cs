@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowMouse : MonoBehaviour
+public class FollowMouse_L5 : MonoBehaviour
 {
 
     public float xBound = 19.0f;
@@ -21,6 +21,7 @@ public class FollowMouse : MonoBehaviour
         mousePos.y = 0;
         mousePos.z = 0;
 
+        mousePos.x = Mathf.Clamp(mousePos.x, -xBound, xBound);
         transform.position = mousePos;
         
     }
