@@ -18,7 +18,7 @@ public class FollowMouse_L5 : MonoBehaviour
         Vector3 mousePos = Input.mousePosition;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
         
-        mousePos.y = 0;
+        mousePos.y = 2;
         mousePos.z = 0;
 
         mousePos.x = Mathf.Clamp(mousePos.x, -xBound, xBound);
