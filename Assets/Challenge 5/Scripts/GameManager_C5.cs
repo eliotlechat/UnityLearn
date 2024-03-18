@@ -91,8 +91,10 @@ public class GameManager_C5 : MonoBehaviour
         
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
- 
+
 
 
 
 }
+
+
