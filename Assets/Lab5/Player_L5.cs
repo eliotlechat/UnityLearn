@@ -92,17 +92,22 @@ public class Player_L5 : MonoBehaviour
             BasketColorIsCorrect = true;
         }
 
-        if (ballColorCaught == Color.green && BasketColor == Color.green)
+        else if (ballColorCaught == Color.green && BasketColor == Color.green)
         {
             Debug.Log("BasketColorIsCorrect = true");
             BasketColorIsCorrect = true;
 
         }
 
-        if (ballColorCaught == Color.red && BasketColor == Color.red)
+        else if (ballColorCaught == Color.red && BasketColor == Color.red)
         {
             Debug.Log("BasketColorIsCorrect = true");
             BasketColorIsCorrect = true;
+        }
+
+        else
+        {
+            BasketColorIsCorrect = false;
         }
     }
 
