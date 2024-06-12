@@ -5,7 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Challenge 6/CongratScene.unity
     guid: aadc34049e2e7a64f82b7813ad932542
+  - enabled: 0
+    path: Assets/Prototype 3/Prototype 3.unity
+    guid: dc8c9f3efd746429fa6f9482dc779492
+  - enabled: 0
+    path: Assets/Prototype 4/Prototype 4.unity
+    guid: a4b96ad7a65484fd4a83cb97540eee50
+  - enabled: 0
+    path: Assets/Prototype 5/Prototype 5.unity
+    guid: a41a278c0541def4da9b70da583d066c
+  - enabled: 0
+    path: Assets/Lab4/Lab4.unity
+    guid: 37807dbf2bfa25c48967183d6bc0e74a
+  - enabled: 0
+    path: Assets/Lab3/Lab3.unity
+    guid: ee24206180a82e44db070922187a56bf
+  - enabled: 1
+    path: Assets/Lab5/BasketColorBalls_L5.unity
+    guid: c237548c21a57894dae9921c31ea3055
+  - enabled: 0
+    path: Assets/ModTheCube/ModTheCube.unity
+    guid: 0837f2ea600db39419ef0a366d70b9de
   m_configObjects: {}
